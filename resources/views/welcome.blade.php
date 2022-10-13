@@ -51,28 +51,29 @@ http://www.templatemo.com/tm-490-comila
 <section id="home">
 	<div class="container">
 		<div class="row">
-        
+
 			<div class="col-md-offset-2 col-md-8 col-sm-12">
-                
+
 				<div class="home-thumb">
 					<h1 class="wow fadeInUp" data-wow-delay="0.4s">Halo, Selamat Datang</h1>
-          			<h3 class="wow fadeInUp" data-wow-delay="0.6s">Silahkan <strong>Login</strong> atau <strong>Registrasi</strong>!</h3>
                     @if (Route::has('login'))
                     @auth
+                    <h3 class="wow fadeInUp" data-wow-delay="0.6s">Silahkan <strong>Login</strong>!</h3>
                     <a href="{{ url('/home') }}" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="0.8s">Home</a>
                     @else
-          			<a href="{{ route('login') }}" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="0.8s">Login</a>
-                      @if (Route::has('register'))
-        			  <a href="{{ route('register') }}" class="btn btn-lg btn-success smoothScroll wow fadeInUp" data-wow-delay="1.0s">Register</a>
+                    <h3 class="wow fadeInUp" data-wow-delay="0.6s">Silahkan <strong>Login</strong> atau <strong>Registrasi</strong>!</h3>
+                    <a href="{{ route('login') }}" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="0.8s">Login</a>
+                        @if (Route::has('register'))
+        			    <a href="{{ route('register') }}" class="btn btn-lg btn-success smoothScroll wow fadeInUp" data-wow-delay="1.0s">Register</a>
                     @endif
                     @endauth
-                
+
                     @endif
 				</div>
 			</div>
 
 		</div>
-	</div>		
+	</div>
 </section>
 
 <!-- modal -->

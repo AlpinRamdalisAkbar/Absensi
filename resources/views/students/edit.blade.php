@@ -36,6 +36,7 @@
                         @foreach($absens as $absen)
                         <option value="{{$absen->nis}}" @if($absen->absen == $absen->absen)selected @endif>{{$absen->nis}}</option>
                         @endforeach
+                    </select>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

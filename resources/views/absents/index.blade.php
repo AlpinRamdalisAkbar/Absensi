@@ -31,7 +31,7 @@
             <td><img width="130px" src="{{ url('/data_file/'.$bukti->file) }}" alt=""></td>
             <td>
                 <form action="{{ route('gambars.destroy',$bukti->id) }}" method="POST">
-     
+    
                     @csrf
                     @method('DELETE')
         
@@ -44,5 +44,5 @@
     </table>
     
     {!! $gambars->links() !!}
-     
+
 @endsection
